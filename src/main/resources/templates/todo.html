@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ToDoリスト</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<a href="/" class="modoru">←戻る</a>
+	    <div id="todo" class = "hello4">
+		  	<h2>ToDoリスト</h2>
+
+		  	<script src="script.js"></script>
+		  	<div>
+		  		<table class="table">
+		  				<tbody class="tbody">
+		  		        <tr th:each="obj: ${datalist}"class="listitem">
+		  					<td><input type="checkbox" th:id="'checkbox_'+${obj.listposition}" th:checked="${obj.listcheck}"></td>
+		  		            <td th:id="'list_'+${obj.listposition}" th:class="${obj.listcheck}? 'editable' : 'editablex'" th:text="${obj.memo}"></td>
+		  					<td><button th:id="'delete_'+${obj.listposition}"><span class="ui-icon ui-icon-trash"></button></td>
+		  		        </tr>
+		  				</tbody>
+		  		
+		  		</table>
+		  		<button id="newlist"><span class="ui-icon ui-icon-plus"></span></button>
+		  	</div>
+			<p class="coment">
+				項目クリックで書き込み、[+]ボタンでリストの新規作成、ゴミ箱ボタンでリストの削除<br>
+				マウスのドラッグアンドドロップで項目を移動できます。<br>
+			</p>
+		  </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" 
+	content="text/html; charset=UTF-8" />
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>平田竜也のポートフォリオ</title>
+</head>
+
+<body>
+	
+  <div id="op">
+  <div id="starry_sky">
+    <p class="namae"><span class="hiratas">平</span><span class="hiratas">田</span><span class="hiratas">竜</span><span class="hiratas">也</span><span class="hiratas">の</span><span class="hiratas">ポ</span><span class="hiratas">ー</span><span class="hiratas">ト</span><span class="hiratas">フ</span><span class="hiratas">ォ</span><span class="hiratas">リ</span><span class="hiratas">オ</span>
+   </p>
+
+	<script src="js.js"></script>
+	
+    <p><img id="uma" src="img/image.png" alt="著者近影"></p>
+   
+    <p id = "comand">
+      <a class ="link" href="#abc">　　トップ　　</a><br>
+      <a class ="link"  href="#syoukai">じこしょうかい</a><br>
+      <a class ="link"  href="#bingo">&nbsp;ビンゴゲーム&nbsp;</a><br>
+      <a class ="link"  href="#todo">　ToDoリスト　</a>	  <br>
+	  <a class ="link"  href="#kikaku">　きかくしょ　</a><br>
+     </p>
+  </div>
+  </div>
+    <div  id="syoukai"  class = "hello">
+      <h1 class="title">自己紹介</h1>
+    <p class="coment"> ここ十年程ゲームのテスターをやっていました。<br>
+        趣味でRPGツクールとかを使ってゲームを作るのでJavaScriptを独学でちまちまやってました。<br>
+		ポリテクセンターで学んだ知識を土台にもっとコンピューターの勉強をして<br>
+		残りの人生をプログラマーとして仕事をするのが目標です。</p>
+    </div>
+    
+    <div class = "hello2">
+      <h1>JavaScriptのゲーム</h1>
+      <div id="bingo">
+      
+     <h2 id="bingo_title">ビンゴゲーム</h2>
+      <table class="bingo">
+		  <tbody class="bingo_sheet"></tbody>
+		  <tbody class="maru_sheet"></tbody>
+    </table>
+	<p class="clear">!!bingo!!</p>
+    <p class="drawNumber">**</p>
+	<p class="kaisu"><span class="bingonum">0</span>回目</p>
+    
+    <button class="reset_button" onclick="createBingo()">リセット</button>
+    <button onclick="drawBingo()">スタート</button>
+    
+    <script src="bingo.js"></script>
+
+      </div>
+	  <p class="coment">
+		スタートボタンで開始・番号の抽選、リセットボタンでゲームをリセットできます。<br>
+     	JavaScriptのみでつくったげーむになります。<br>
+		テーブルの自動生成や〇の表示、クリア判定に苦労しました。
+	  </p>
+    </div>
+	
+	<div id="todo" class = "hello3">
+	  <h1>Javaのアプリケーション</h1>
+	  	<h2>ToDoリスト</h2>
+		<h2>↓↓画像クリックで移動↓↓</h2>
+			<a href="/todo"><img src="img/todo.png" alt="ToDoのリンク"></a>
+			<p class="coment">
+				画面更新が必要なので別ページに遷移してください<br>
+				SpringbootとThymeleafを使って作りました。JavaScriptにはJQueryを使用しています。<br>
+				データベースのアクセスはSpringbootとThymeleafの機能で比較的簡単でしたが、<br>
+				JavaScriptが非常に大変でした。<br>
+				今後タブで複数ページを管理できるようにしたり機能を追加する予定です。
+			</p>
+	
+	  </div>
+	  <script>
+	  function passCheck(){
+	  Input = window.prompt("パスワードを入力してください","");
+	   if ( Input == "hhh" ){location.href="body.html"; }
+	  }
+	  </script>
+	<div id="kikaku" class = "hello5">
+	    <h1>企画書</h1>
+		<p class="coment">
+			こんなものを作りたい<br>
+			こんなものあったらいいなを企画書にしてみました。<br>
+			みなさんと一緒に作れたら最高です！<br>
+		</p>
+		<h2>↓↓クリックで詳細にお移動↓↓</h2>
+		
+		<ul class="container">
+			<div class="frame">
+			<a href="diorama.html"><li>ジオラマセット</li>
+			<img class="imgsmall" src="img/diorama_mini.jpg" alt="ジオラマセット"></a>
+			<p>ジオラマとディスプレイをセットにしたサービスの企画です。<br>ディスプレイが低価格化しているのでお手頃価格で実現したいです！</p>
+			</div>
+			
+			<div class="frame">
+			<a href="cool.html"><li>冷蔵庫カメラ</li>
+			<img class="imgsmall" src="img/coolcam_mini.jpg" alt="冷蔵庫カメラ"></a>
+			 <p>冷蔵庫の中を撮影してスマホでチェック！<br>後付けの冷蔵庫用のカメラの企画です</p>
+			 </div>
+			 
+			 <div class="frame">  
+			 <a href="cover.html"><li>逆入れカサカバー</li>
+			 <img class="imgsmall" src="img/headcover_mini.jpg" alt="逆入れ傘カバー"></a>
+			 <p>ITとは関係ない逆から入れる傘カバーのアイディアです</p>
+			 </div>
+			 
+			<div>		
+			 <a onclick="passCheck()"><li>ＶＲ抱き枕</li>
+			 <img class="imgsmall" src="img/body_mini.jpg" alt="VR抱き枕"></a>
+			 <p><span style="color:red">※注意　性的な表現を含みます！！</span><br>ＶＲ対応の抱き枕の企画です<br>pass:hhh</p>
+			 </div>		   
+		</ul>
+		
+		<h1>ＵＩＲの企画書</h1>
+		<h2>ＵＩＲとはユーザーインターフェースからＶＲ、ＡＲにアプローチするアイディアです</h2>
+		<p>作成時の都合で3DSを前提とした画像になっております</p>
+		
+		<ul class="container2">
+		<div class="frame">		
+		<a href="omamagoto.html"><li>おままごとセット</li>
+		<img class="imgsmall" src="img/omamagoto_mini.jpg" alt="UIRおままごとセット"></a>
+		<p>メインコンテンツ、おままごとセットをコンピューターと接続するゲームの企画です</p>
+		</div>
+		
+		<div class="frame">
+		<a href="gacha.html"><li>ガチャガチャと連携したゲーム</li>
+		<img class="imgsmall" src="img/otokonoko_mini.jpg" alt="UIRガチャガチャゲーム"></a>
+		<p>おまけ、男の子向けのガチャガチャと連動したゲームの企画です</p>
+		</div>
+		
+		</ul>
+		
+		<a href="uir.html"><h1 style="color: red;">[ＵＩＲとは？→]</h1></a>
+		<p>細かい解説になります</p>
+		
+		</div>
+
+    
+   
+</body>
+</html>
