@@ -1,0 +1,246 @@
+@charset "utf-8";
+@font-face { 
+  font-family: "myfont"; 
+  src: url("font/misaki_gothic_2nd.ttf") format("truetype") 
+}
+body{
+  min-height: 0px;
+  background-color: antiquewhite;
+}
+#op{
+  position: absolute;
+  top:0px;
+  width:100%;
+  background: linear-gradient(0deg, #453f82 0%, #28305d 20%, #010102 60%) no-repeat #0f1476;
+}
+
+h1{
+  text-align: center;
+  color: black;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.starry_sky{ 
+  position: relative;
+  z-index: 0;
+}
+.star {
+  background-color: white;
+  position: relative;
+  border-radius: 50%;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+}
+@keyframes twinkle {
+  50% {
+    transform: scale(0.2);   
+  }
+} 
+.namae{
+  text-align: center;
+  font-family: "ＭＳ Ｐ明朝";
+  color: white;
+  font-size: 55px;
+  text-shadow: 0 0 10px #eee,0 0 15px #eee;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+#uma{
+  object-fit: cover;
+  width: 550px;
+  height: 650px;
+  position: absolute;
+  top:160px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#comand{
+  font-family: "myfont";
+  font-size: 40px;
+  background-color: black;
+  color: white;
+  position: relative;
+  width: 284px;
+  height: 234px;
+  left:150px;
+  bottom:700px;
+  line-height:1.2em;
+  border: white 5px solid;
+  border-radius: 5%;
+  z-index: 3;
+}
+
+.link:hover {
+  background-color: #3f4748;
+  cursor: pointer;
+}
+.hello{
+  position: relative;
+  top:750px;
+  text-align: center;
+  background-color: white;
+  margin: 100px 20px 10px 20px;
+  border: #ec8313 5px solid;
+  border-radius: 8px;
+  padding: auto;
+}
+.hello2{
+  position: relative;
+  top:800px;
+  width: auto;
+  text-align: center;
+  background-color: white;
+  margin: 100px 20px 10px 20px;
+  border: #ec8313 5px solid;
+  border-radius: 8px;
+}
+.bingo{
+  position: absolute;
+	width: auto;
+	height: auto;
+	margin:auto;
+	position: relative;
+	text-align: center;
+	border-color: #010102;
+}
+.bingo_sheet{
+  color:white;
+  font-size: 35px;
+  letter-spacing: 0;
+  background-color: rgb(235, 57, 57);
+  z-index: 2;
+}
+.bingo_sheet td{
+	width:80px;
+	height: 80px;
+}
+.maru_sheet{
+	font-weight: bold;
+	position:absolute;
+	top:0px;
+	left:0px;
+  color:white;
+  font-size: 50px;
+  letter-spacing: 0;
+  z-index: 3;
+}
+.maru_sheet td{
+	width:80px;
+	height: 80px;
+}
+
+@keyframes blinking {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.clear{
+	visibility: hidden;
+	position: relative;
+	bottom:360px;
+	color: rgb(255, 255, 0);
+ 	font-size: 80px;
+  	-webkit-text-stroke: 2px rgb(0, 0, 0);
+	font-weight:900;
+	 animation: blinking  1s step-end infinite;
+	   z-index: 4;
+}
+
+.drawNumber{
+	position: relative;
+	font-weight: bold;
+	font-size: xx-large;
+	margin-top:-260px;
+	margin-bottom: 0px;
+}
+.kaisu{
+	font-weight: bold;
+	font-size: xx-large;
+	margin-top:0px ;
+	margin-bottom:10px;
+}
+
+.hello3{
+  position: relative;
+  top:750px;
+  width: auto;
+  text-align: center;
+  background-color: white;
+  margin: 100px 20px 10px 20px;
+  border: #ec8313 5px solid;
+  border-radius: 8px; 
+  padding-bottom: 60px;
+}
+.hello6{
+  text-align: center;
+  background-color: white;
+  margin: 10px 20px 10px 20px;
+  border: #ec8313 5px solid;
+  border-radius: 8px; 
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: auto;
+}
+.hello5{
+  position: relative;
+  top:710px;
+  width: auto;
+  text-align: center;
+  background-color: white;
+  margin: 100px 20px 10px 20px;
+  border: #ec8313 5px solid;
+  border-radius: 8px; 
+  padding-bottom: 60px;
+}
+.container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /* 3列 */
+	gap: 0px;
+	padding: 10px;
+}
+.container2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /* 3列 */
+	gap: 0px;
+	padding: 10px;
+}
+ul{
+	list-style-position: inside;
+	padding: 0;
+	text-align: center;
+}
+li{
+	color:black;
+	text-align: center;
+	font-size: xx-large;
+}
+.imgsmall{
+	width: 300px;
+	height: 220px;
+	object-fit: cover;
+}
+
+.coment{
+	color: black;
+	letter-spacing:0px;
+	font-size:larger;
+	text-align: center;
+}
+.hello4{
+  top:0%;
+  text-align: center;
+  background-color: white;
+  border: #ec8313 5px solid;
+  border-radius: 8px;
+}

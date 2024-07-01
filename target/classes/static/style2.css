@@ -1,0 +1,86 @@
+@charset "utf-8";
+.modoru{
+	font-weight: bold;
+	font-size: larger;
+	color: darkblue;
+}
+table{
+	margin:auto;
+	width:330px;
+	background-color: cornflowerblue;
+}
+
+.listitem{
+	background-color: yellow;
+
+	width:300px;
+	height: 40px;
+	}
+	
+.editable{
+	font-weight: normal;
+	text-decoration: line-through; 
+	background-color: red;
+	width:300px;
+}
+.editablex{
+	font-weight: bolder;	
+	background-color: yellow;
+	width:300px;
+}
+#newlist{
+	position: relative;
+	right:140px;
+	
+}
+
+/*タブ用CSS*/
+/*.tab_menu {*/
+/*    padding: 0px;*/
+/*    margin: 0px;*/
+/*}*/
+
+/*.tab_menu-item {*/
+/*    display: inline-block;*/
+/*    width:auto;*/
+/*    margin: 0px; */
+/*    padding: 0px;*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+    
+/*}*/
+
+/*.tab_menu-item-content {*/
+/*	background-color: #f0f0f0;  タブの背景色 */
+/*    border-radius: 10%;*/
+/*}*/
+
+
+/*.tab_menu-item-content.-active {*/
+/*	padding-right: 15px;  タブのパディング */
+/*    background-color: rgb(255, 255, 0);  タブの背景色 */
+/*}*/
+
+
+/*#tab_menu-item-action {*/
+/*    border: none;  ボタンの枠線をなくす */
+/*    background: none;  ボタンの背景色をなくす */
+/*    cursor: pointer;  マウスポインターを変更 */
+/*    position:relative;*/
+/*    right: 30px;*/
+/*    z-index: 2;*/
+    
+/*}*/
+
+/*.tab_menu-item button:focus {*/
+/*    outline: none;  ボタンにフォーカス時の枠線をなくす */
+/*}*/
+
+/*.tab_menu-item-content.-activ{*/
+/*	background-color: yellow;*/
+/*}*/
+
+
+/*#newtab{*/
+/*	position: relative;*/
+/*}*/
